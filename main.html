@@ -16,7 +16,7 @@
       <img class="w-12" src="assets/Group.png" alt="">
     </div>
     <div class="pl-3">
-    <h1 class="font-bold">$45000</h1>
+    <h1 class="font-bold">$ <span id="main-a">45000</span> </h1>
     
     <p>Available Balance</p>
     </div>
@@ -36,7 +36,7 @@
         </section>
         <section>
             <div class="grid grid-cols-3 gap-4 py-8 px-6">
-                <div id="" class="border rounded-lg p-2 cursor-pointer">
+                <div id="add-money-btn" class="border rounded-lg p-2 cursor-pointer">
                     <img class="w-8 pt-4 mx-auto" src="assets/wallet1.png" alt="">
                     <h3 class="text-center text-xs pt-3">Add Money</h3>
                 </div>
@@ -63,7 +63,7 @@
 
             </div>
         </section>
-        <section class="bg-base-200">
+        <section id="last-bill" class="bg-base-200">
             <div class="py-8 px-6">
                 <h2 class="font-bold">Latest Payment</h2>
                 <div class="flex mt-4 border-white shadow-xl py-3 pl-3 rounded-2xl"
@@ -109,7 +109,8 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="add-money" class=" px-6 bg-base-200 ">
+            <h2 class="font-bold">Add Money</h2>
             <div class="hero bg-base-200 ">
   <div class="hero-content ">
     
@@ -127,11 +128,11 @@
           <label class="label" >Bank Account Number</label>
           <input type="number" class="input" value ="01951520571" placeholder="Bank Account Number" />
           <label >Amount to Add</label>
-           <input type="number" class="input" placeholder="Amount to Add" />
+           <input id="add-Amount" type="number" class="input" placeholder="Amount to Add" />
           <label class="label">Password</label>
-          <input type="text" class="input" value="1234" placeholder="Password" />
+          <input id="add-pin" type="text" class="input" value="1234" placeholder="Password" />
           <div><a class="link link-hover">Forgot password?</a></div>
-          <button class="btn btn-primary mt-4 rounded-xl">Add Money</button>
+          <button id="add-btn" class="btn btn-primary mt-4 rounded-xl">Add Money</button>
         </fieldset>
       </div>
     </div>
@@ -140,6 +141,6 @@
 
         </section>
     </main>
-    
+    <script src="main.js"></script>
 </body>
 </html>
