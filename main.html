@@ -40,7 +40,7 @@
                     <img class="w-8 pt-4 mx-auto" src="assets/wallet1.png" alt="">
                     <h3 class="text-center text-xs pt-3">Add Money</h3>
                 </div>
-                <div class="border rounded-lg p-2  cursor-pointer">
+                <div id="cash-out" class="border rounded-lg p-2  cursor-pointer">
                     <img class="w-8 mx-auto pt-4" src="assets/send1.png" alt="">
                     <h3 class="text-center text-xs pt-3">Cash Out</h3>
                 </div>
@@ -118,7 +118,7 @@
       <div class="card-body">
         <fieldset class="fieldset">
             <label class="label" >Select A Bank</label>
-            <select class="select"placeholder="Select A Bank">
+            <select class="select"placeholder="Select  Bank">
                     <option disabled selected > Select A Bank</option>
                      <option > bikash</option>
                      <option>Nogod</option>
@@ -140,7 +140,31 @@
 </div>
 
         </section>
+        <section id="cash-out-from" class="px-6 bg-base-200">
+            <h2 class="font-bold">Cash Out</h2>
+            <div class="hero bg-base-200 ">
+  <div class="hero-content ">
+    
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        
+        <fieldset class="fieldset">
+            <label class="label">Agent Number</label>
+          <input type="number" class="input" value="01345760147" placeholder="Enter 11 digit number" />
+          <label class="label">Amount</label>
+          <input type="number" id="cash-out-amount" class="input" placeholder="Enter amount to withdraw" />
+          <label class="label">Pin Number</label>
+          <input id="withdraw-pin" type="text" class="input" value="1234" placeholder="Enter 4 digit pin number" />
+          
+          <button id="withdraw-btn" class="btn btn-primary mt-4">Withdraw Money</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+        </section>
     </main>
+    <script src="cashout.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
