@@ -1,9 +1,12 @@
 
-
+document.getElementById("add-money").style.display = "none";
+document.getElementById("send-now").style.display = "none";
 document.getElementById("cash-out-from").style.display = "none";
 
 document.getElementById("cash-out").addEventListener("click", function(event){
     event.preventDefault();
+    document.getElementById("add-money").style.display = "none";
+document.getElementById("send-now").style.display = "none";
     document.getElementById("cash-out-from").style.display = "block";
     document.getElementById("last-bill").style.display = "none";
     document.getElementById("withdraw-btn").addEventListener("click",function(event){

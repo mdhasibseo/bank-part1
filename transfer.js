@@ -1,7 +1,11 @@
 document.getElementById("send-now").style.display = "none";
+document.getElementById("add-money").style.display = "none";
+document.getElementById("cash-out-from").style.display = "none";
 
 document.getElementById("transfer").addEventListener("click", function(event){
     event.preventDefault();
+    document.getElementById("add-money").style.display = "none";
+document.getElementById("cash-out-from").style.display = "none";
     document.getElementById("send-now").style.display = "block";
     document.getElementById("last-bill").style.display = "none";
     document.getElementById("transfer-btn").addEventListener("click",function(event){
