@@ -23,7 +23,7 @@
   </div>
   
   <div class="navbar-end">
-    <a class="btn">Log Out</a>
+    <a id="main-btn" class="btn">Log Out</a>
   </div>
 </div></nav>
     </header>
@@ -52,11 +52,11 @@
                     <img class="w-8 mx-auto pt-4" src="assets/bonus1.png" alt="">
                     <h3 class="text-center text-xs pt-3">Get Bonus</h3>
                 </div>
-                <div class="border rounded-lg p-2  cursor-pointer">
+                <div id="pay-bill" class="border rounded-lg p-2  cursor-pointer">
                     <img class="w-8 mx-auto pt-4" src="assets/purse1.png" alt="">
                     <h3 class="text-center text-xs pt-3">Pay Bill</h3>
                 </div>
-                <div class="border rounded-lg p-2  cursor-pointer">
+                <div id="last" class="border rounded-lg p-2  cursor-pointer">
                     <img class="w-8 mx-auto pt-4" src="assets/transaction1.png" alt="">
                     <h3 class="text-center text-xs pt-3">Transactions</h3>
                 </div>
@@ -118,7 +118,7 @@
       <div class="card-body">
         <fieldset class="fieldset">
             <label class="label" >Select A Bank</label>
-            <select class="select"placeholder="Select  Bank">
+            <select id="bank-add" class="select"placeholder="Select  Bank">
                     <option disabled selected > Select A Bank</option>
                      <option > bikash</option>
                      <option>Nogod</option>
@@ -131,7 +131,7 @@
            <input id="add-Amount" type="number" class="input" placeholder="Amount to Add" />
           <label class="label">Password</label>
           <input id="add-pin" type="text" class="input" value="1234" placeholder="Password" />
-          <div><a class="link link-hover">Forgot password?</a></div>
+          
           <button id="add-btn" class="btn btn-primary mt-4 rounded-xl">Add Money</button>
         </fieldset>
       </div>
@@ -207,6 +207,37 @@
 </div>
          
           
+        </section>
+              <section id="pay-section" class=" px-6 bg-base-200 ">
+            <h2 class="font-bold">Pay Bill</h2>
+            <div class="hero bg-base-200 ">
+  <div class="hero-content ">
+    
+    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+      <div class="card-body">
+        <fieldset class="fieldset">
+            <label class="label" >Select To Pay</label>
+            <select id="bank"  class="select"placeholder="Select  Bank">
+                    <option disabled selected > Select A Bank</option>
+                       <option value="bikash">Bikash</option>
+                       <option value="nogod">Nogod</option>
+                      <option value="roket">Roket</option>
+                       <option value="bdl">BDL</option>
+            </select>
+          <label class="label" >Biller Account Number</label>
+          <input type="number" class="input" value ="01951520571" placeholder="Enter account number" />
+          <label >Amount to Pay</label>
+           <input id="pay-Amount" type="number" class="input" placeholder="Add Amount to pay" />
+          <label class="label">Pin Number</label>
+          <input id="pay-pin" type="text" class="input" value="1234" placeholder="Password" />
+          
+          <button id="pay-btn" class="btn btn-primary mt-4 rounded-xl">Pay Now</button>
+        </fieldset>
+      </div>
+    </div>
+  </div>
+</div>
+
         </section>
     </main>
     <script src="transfer.js"></script>

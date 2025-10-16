@@ -9,6 +9,7 @@ document.getElementById("transfer").addEventListener("click", function(event){
     document.getElementById("get-bonus-section").style.display = "none";
 document.getElementById("cash-out-from").style.display = "none";
     document.getElementById("send-now").style.display = "block";
+    document.getElementById("pay-section").style.display = "none";
     document.getElementById("last-bill").style.display = "none";
     document.getElementById("transfer-btn").addEventListener("click",function(event){
         event.preventDefault();
